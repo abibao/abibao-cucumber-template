@@ -6,11 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "colors": "1.1.2",
+    "commander": "2.9.0",
+    "cucumber": "0.9.4",
+    "selenium-webdriver": "2.48.2"
+  },
+  "devDependencies": {
+    "selenium-standalone": "4.6.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abibao/abibao-cucumber-template.git"
   },
-  "author": "",
+  "author": "Gilles Perreymond",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abibao/abibao-cucumber-template/issues"
