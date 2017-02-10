@@ -1,0 +1,22 @@
+machine:
+  timezone:
+    Europe/Paris
+  node:
+    version: 6.9.1
+  pre:
+    - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
+    - pip install docker-compose
+  services:
+    - docker
+dependencies:
+  pre:
+    - sudo service mysql stop
+    - sudo service postgresql stop
+    - docker-compose up -f ./docker/docker-compose.yml up -d
+  cache_directories:
+    - node_modules
+test:
+  override:
+    - npm install
+    - npm prune
+    - npm test

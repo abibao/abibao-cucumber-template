@@ -1,0 +1,11 @@
+hub:
+  build: ./Hub/
+  ports:
+    - "4444:4444"
+node:
+  build: ./Node/
+  links:
+    - hub
+  volumes:
+    - /dev/shm:/dev/shm
+
