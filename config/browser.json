@@ -1,0 +1,9 @@
+[{
+    "BrowserName": "chrome",
+    "max_session": 4
+  },
+  {
+    "BrowserName": "firefox",
+    "max_session": 4
+  }
+]

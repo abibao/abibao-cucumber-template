@@ -12,7 +12,7 @@ dependencies:
   pre:
     - sudo service mysql stop
     - sudo service postgresql stop
-    - docker-compose up -f ./docker/docker-compose.yml up -d
+    - docker-compose -f ./docker/docker-compose.yml up -d
   cache_directories:
     - node_modules
 test:
